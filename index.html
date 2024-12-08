@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="eng-ca">
+<!--Note the use of Google Fonts in this exercise (see the below line in my <head> referencing the two fonts I use in the CSS file), Google offers free web fonts and they are *really* easy to implemment, see https://fonts.google.com/ for more info-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GBDA228 Final</title>
+  
+ <!-- created by Alejandra Antequera on Thursday December 5-->  
+
+
+  
+ <!-- fonts -->  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=La+Belle+Aurore&display=swap" rel="stylesheet">
+
+
+  
+<style>
+html{
+ height: 100%;
+ width: 100%;
+}
+
+body {
+  background-color: #FAF7F0;
+   height: 100%;
+ width: 100%;
+} 
+  
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: spcae-between;
+    padding: 10px 20px;
+    margin-left: 118px;
+    margin-right: 118px;
+}
+  
+.a1:hover {
+  background-color: #462A2A;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: #FAF7F0;
+  text-decoration: none;
+  border-radius: 100px;
+  border-top: 5px solid #462A2A;
+  border-bottom: 5px solid #462A2A;
+  border-left: 30px solid #462A2A;
+  border-right: 30px solid #462A2A;
+}
+  
+a {
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: #462A2A;
+  text-decoration: none;
+}
+  
+    
+.aSelected {
+  background-color: #462A2A;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: #FAF7F0;
+  text-decoration: none;
+  border-radius: 100px;
+  border-top: 5px solid #462A2A;
+  border-bottom: 5px solid #462A2A;
+  border-left: 30px solid #462A2A;
+  border-right: 30px solid #462A2A;
+}
+
+
+  
+  
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+li  {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 30px;
+}
+  
+  .nav2 {
+    display: flex;
+    align-items: center;
+    justify-content: spcae-between;
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    height: auto;
+    padding: 185px 500px;
+}
+
+  
+  .a2 {
+  font-size: 30px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: white;
+  text-decoration: none;
+
+}
+  
+  .a2:hover {
+  font-size: 30px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: #FFBF76;
+  text-decoration: none;
+}
+  
+.a2Selected {
+  font-size: 30px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: #FFBF76;
+  text-decoration: none;
+
+}
+
+.ul2 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+.li2  {
+  float: left;
+  display: block;
+  color: blue;
+  text-align: center;
+  padding: 14px 30px;
+}
+
+  
+  
+
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-size: 64px;
+  color: white;
+}
+
+h2 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-size: 48px;
+  color: white;
+}
+  
+  
+h3 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-size: 44.8px;
+  text-align: right;
+  color: white;
+}
+  
+p {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 30px;
+  color: white;
+}
+
+h4 {
+  font-family: "La Belle Aurore", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 80px;
+  color: white;
+}
+  
+.writeBigP {
+    position: absolute;
+    top: 29%;
+    left: 16%;
+    margin: 0;
+    transform: rotate(350deg);
+  
+
+
+}
+
+.writeBigP2 {
+    position: absolute;
+    top: 42.5%;
+    left: 11%;
+    margin: 0;
+    transform: rotate(350deg);
+
+}
+  
+  
+.writeSmallP {
+  font-family: "La Belle Aurore", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 64px;
+  color: #FF3967;
+}
+
+.writeSmallW {
+  font-family: "La Belle Aurore", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 64px;
+  color: white;
+}
+
+.lastName {
+  font-family: "La Belle Aurore", cursive;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 64px;
+  color: #462A2A;
+  margin-left: auto;
+  padding-left: 20px
+}
+  
+  
+
+  
+  
+    
+  .textHeader {
+    position: absolute;
+    top: 80%;
+    left: 57%;
+    margin: 0;
+    
+  }
+
+.rectangle {
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  height: 210%;
+  width: 80%;
+  background-image: linear-gradient(#E01E6C, #861A33);
+  border-radius: 100px;
+ 
+}
+  
+.rectangle2 {
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  height: 80%;
+  width: 50%;
+  background: #FAF7F0;
+  border-radius: 100px;
+ 
+}
+  
+.rectangle3 {
+  position: absolute;
+  left: 2%;
+  top: 55%;
+  height: 70%;
+  width: 45%;
+  background: #861A33;
+  border-radius: 100px;
+ 
+}
+  
+ .rectangle4 {
+  position: absolute;
+  left: 0%;
+  top: 55%;
+  height: 70%;
+  width: 25%;
+  background: #861A33;
+
+}
+
+
+
+
+
+
+  .catImage {
+    position: absolute;
+    top: 55%;
+    left: 2%;
+    z-index: 9999;
+
+    width: 40%;
+    height: 60%;
+    
+  }
+  
+    .navImage {
+    position: absolute;
+    top: 28%;
+    left: 7.25%;
+    width: 84%;
+    height: 18%;
+    z-index: 9998;
+    
+  }
+
+  
+    .picImage {
+    position: absolute;
+    top: 60%;
+    left: 0%;
+    z-index: 9999;
+
+    width: 40%;
+    height: 50%;
+    
+  }
+  
+  
+  
+  
+  .nameHeader {
+    position: absolute;
+    top: 210%;
+    left: 35%;
+    margin: 0;
+    text-align: center;
+  }
+  
+    
+  .nameHeader2 {
+    position: absolute;
+    top: 80%;
+    left: 55%;
+    margin: 0;
+    text-align: center;
+    z-index: 99999;
+  }
+  
+
+ 
+  
+</style>
+  
+
+
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a class="a1" href="#home">Home</a></li>
+    <li><a class="aSelected" href="#portfolio">Portfolio</a></li>
+    <li><a class="a1" href="#devlog">Dev Log</a></li>
+    <li><a class="a1" href="#contactme">Contact Me</a></li>
+  </ul>
+  <div class="lastName">Antequera</div>
+</nav>
+  
+<div class="nav2">
+  <ul class="ul2">
+    <li class="li2"><a class="a2Selected" href="#coding">Coding Projects</a></li>
+    <li class="li2"><a class="a2" href="#3Dart">3D Art</a></li>
+    <li class="li2"><a class="a2" href="#2Dart">2D Art</a></li>
+  </ul>
+</div>
+
+
+  
+  
+<div class="rectangle">
+</div>
+  
+<img src="coding.png" alt="kitchen chaos picture" class="picImage">
+  
+
+  
+<img src="nav.png" alt="nav" class="navImage">
+
+  <h1 class="nameHeader2">
+  Kitchen Chaos
+  </h1>
+
+  
+
+  
+
+  
+  <h2 class="nameHeader">
+  More coming soon...
+  </h2>
+  
+</body>
+</html>
